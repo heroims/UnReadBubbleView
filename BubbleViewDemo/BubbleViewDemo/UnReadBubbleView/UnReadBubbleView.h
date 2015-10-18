@@ -36,5 +36,11 @@
 //allow PanGestureRecognizer default yes
 @property (nonatomic,assign)BOOL allowPan;
 
+//结束动画时长
+//finish animation duration
+@property (nonatomic,assign)float finishAnimationDuration;
+
+@property (nonatomic,copy)void (^callBackBlock)(void);
+
 -(void)start;
 @end

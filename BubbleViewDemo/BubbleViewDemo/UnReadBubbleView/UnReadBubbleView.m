@@ -17,6 +17,7 @@
     
     UIView *frontView;
     UIView *backView;
+    UIImageView *bombView;
     CGFloat r1; // backView
     CGFloat r2; // frontView
     CGFloat x1;
@@ -67,6 +68,7 @@
         _bubbleColor = [UIColor colorWithRed:1 green:0.3 blue:0.3 alpha:1];
         _allowPan=YES;
         _showGameCenterAnimation=NO;
+        _finishAnimationDuration=0.5;
     }
     return self;
 }
@@ -79,19 +81,36 @@
         _bubbleColor = [UIColor colorWithRed:1 green:0.3 blue:0.3 alpha:1];
         _allowPan=YES;
         _showGameCenterAnimation=NO;
+        _finishAnimationDuration=0.5;
         self.bubbleWidth = frame.size.height;
         initialPoint = frame.origin;
     }
     return self;
 }
 
--(void)removeFromSuperview{
-
-    [frontView removeFromSuperview];
+-(void)removeAnimation{
     [backView removeFromSuperview];
-    frontView=nil;
     backView=nil;
-    
+
+    bombView=[[UIImageView alloc] initWithFrame:frontView.frame];
+    [frontView removeFromSuperview];
+    frontView=nil;
+
+    [self.superview addSubview:bombView];
+    [bombView setAnimationImages:@[[UIImage imageNamed:@"UnReadBubbleView.bundle/bomb0"],[UIImage imageNamed:@"UnReadBubbleView.bundle/bomb1"],[UIImage imageNamed:@"UnReadBubbleView.bundle/bomb2"],[UIImage imageNamed:@"UnReadBubbleView.bundle/bomb3"],[UIImage imageNamed:@"UnReadBubbleView.bundle/bomb4"]]];
+    [bombView setAnimationRepeatCount:1];
+    [bombView setAnimationDuration:_finishAnimationDuration];
+    [bombView startAnimating];
+
+    [self performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:_finishAnimationDuration];
+}
+
+-(void)removeFromSuperview{
+    [bombView removeFromSuperview];
+    bombView=nil;
+    if (_callBackBlock!=nil) {
+        _callBackBlock();
+    }
     [super removeFromSuperview];
 }
 
@@ -119,6 +138,7 @@
     self.bubbleLabel.frame = CGRectMake(0, 0, frontView.bounds.size.width, frontView.bounds.size.height);
     self.bubbleLabel.textColor = [UIColor whiteColor];
     self.bubbleLabel.textAlignment = NSTextAlignmentCenter;
+    self.bubbleLabel.text=@"19";
     
     [frontView insertSubview:self.bubbleLabel atIndex:0];
     
@@ -197,7 +217,7 @@
         CGFloat newCritical=sqrtf(xDist*xDist+yDist*yDist);
 
         if (r1 <=_breakViscosity&&critical<newCritical) {
-            [self removeFromSuperview];
+            [self removeAnimation];
         }
         else{
             backView.hidden = YES;

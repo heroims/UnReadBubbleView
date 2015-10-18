@@ -22,7 +22,8 @@
     
     bv=[[UnReadBubbleView alloc] initWithFrame:CGRectMake(60, 60, 25, 25)];
     [self.view addSubview:bv];
-    
+    bv.bubbleLabel.text=@"20";
+
     UIButton *btnAdd=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     btnAdd.frame=CGRectMake(50, [UIScreen mainScreen].bounds.size.height-100, [UIScreen mainScreen].bounds.size.width-100, 60);
     [btnAdd setTitle:@"添加" forState:UIControlStateNormal];

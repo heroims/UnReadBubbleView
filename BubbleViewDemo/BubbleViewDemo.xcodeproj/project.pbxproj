@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D8073CD51ABAA86D00C7B875 /* UnReadBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8073CD41ABAA86D00C7B875 /* UnReadBubbleView.m */; };
+		D826CD701BD3F81400F629EA /* UnReadBubbleView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D826CD6F1BD3F81400F629EA /* UnReadBubbleView.bundle */; settings = {ASSET_TAGS = (); }; };
 		D8D76C651AB98A24001778F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C641AB98A24001778F3 /* main.m */; };
 		D8D76C681AB98A24001778F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C671AB98A24001778F3 /* AppDelegate.m */; };
 		D8D76C6B1AB98A24001778F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C6A1AB98A24001778F3 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		D8073CD31ABAA86D00C7B875 /* UnReadBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnReadBubbleView.h; sourceTree = "<group>"; };
 		D8073CD41ABAA86D00C7B875 /* UnReadBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnReadBubbleView.m; sourceTree = "<group>"; };
+		D826CD6F1BD3F81400F629EA /* UnReadBubbleView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnReadBubbleView.bundle; sourceTree = "<group>"; };
 		D8D76C5F1AB98A24001778F3 /* BubbleViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D76C631AB98A24001778F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8D76C641AB98A24001778F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		D8073CD21ABAA86D00C7B875 /* UnReadBubbleView */ = {
 			isa = PBXGroup;
 			children = (
+				D826CD6F1BD3F81400F629EA /* UnReadBubbleView.bundle */,
 				D8073CD31ABAA86D00C7B875 /* UnReadBubbleView.h */,
 				D8073CD41ABAA86D00C7B875 /* UnReadBubbleView.m */,
 			);
@@ -215,6 +218,7 @@
 				D8D76C6E1AB98A24001778F3 /* Main.storyboard in Resources */,
 				D8D76C731AB98A24001778F3 /* LaunchScreen.xib in Resources */,
 				D8D76C701AB98A24001778F3 /* Images.xcassets in Resources */,
+				D826CD701BD3F81400F629EA /* UnReadBubbleView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
