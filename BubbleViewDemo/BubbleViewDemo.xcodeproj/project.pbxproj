@@ -8,25 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D8073CD51ABAA86D00C7B875 /* UnReadBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8073CD41ABAA86D00C7B875 /* UnReadBubbleView.m */; };
-		D826CD701BD3F81400F629EA /* UnReadBubbleView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D826CD6F1BD3F81400F629EA /* UnReadBubbleView.bundle */; settings = {ASSET_TAGS = (); }; };
+		D826CD701BD3F81400F629EA /* UnReadBubbleView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D826CD6F1BD3F81400F629EA /* UnReadBubbleView.bundle */; };
 		D8D76C651AB98A24001778F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C641AB98A24001778F3 /* main.m */; };
 		D8D76C681AB98A24001778F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C671AB98A24001778F3 /* AppDelegate.m */; };
 		D8D76C6B1AB98A24001778F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C6A1AB98A24001778F3 /* ViewController.m */; };
 		D8D76C6E1AB98A24001778F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D76C6C1AB98A24001778F3 /* Main.storyboard */; };
 		D8D76C701AB98A24001778F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D76C6F1AB98A24001778F3 /* Images.xcassets */; };
 		D8D76C731AB98A24001778F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D76C711AB98A24001778F3 /* LaunchScreen.xib */; };
-		D8D76C7F1AB98A24001778F3 /* BubbleViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D76C7E1AB98A24001778F3 /* BubbleViewDemoTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D8D76C791AB98A24001778F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8D76C571AB98A24001778F3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8D76C5E1AB98A24001778F3;
-			remoteInfo = BubbleViewDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D8073CD31ABAA86D00C7B875 /* UnReadBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnReadBubbleView.h; sourceTree = "<group>"; };
@@ -42,20 +31,12 @@
 		D8D76C6D1AB98A24001778F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8D76C6F1AB98A24001778F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8D76C721AB98A24001778F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D8D76C781AB98A24001778F3 /* BubbleViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D76C7D1AB98A24001778F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8D76C7E1AB98A24001778F3 /* BubbleViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleViewDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D8D76C5C1AB98A24001778F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8D76C751AB98A24001778F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				D8D76C5F1AB98A24001778F3 /* BubbleViewDemo.app */,
-				D8D76C781AB98A24001778F3 /* BubbleViewDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,24 +135,6 @@
 			productReference = D8D76C5F1AB98A24001778F3 /* BubbleViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8D76C771AB98A24001778F3 /* BubbleViewDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8D76C851AB98A24001778F3 /* Build configuration list for PBXNativeTarget "BubbleViewDemoTests" */;
-			buildPhases = (
-				D8D76C741AB98A24001778F3 /* Sources */,
-				D8D76C751AB98A24001778F3 /* Frameworks */,
-				D8D76C761AB98A24001778F3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8D76C7A1AB98A24001778F3 /* PBXTargetDependency */,
-			);
-			name = BubbleViewDemoTests;
-			productName = BubbleViewDemoTests;
-			productReference = D8D76C781AB98A24001778F3 /* BubbleViewDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,10 +146,7 @@
 				TargetAttributes = {
 					D8D76C5E1AB98A24001778F3 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					D8D76C771AB98A24001778F3 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = D8D76C5E1AB98A24001778F3;
+						DevelopmentTeam = YDDJ83LVSQ;
 					};
 				};
 			};
@@ -205,7 +164,6 @@
 			projectRoot = "";
 			targets = (
 				D8D76C5E1AB98A24001778F3 /* BubbleViewDemo */,
-				D8D76C771AB98A24001778F3 /* BubbleViewDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,13 +177,6 @@
 				D8D76C731AB98A24001778F3 /* LaunchScreen.xib in Resources */,
 				D8D76C701AB98A24001778F3 /* Images.xcassets in Resources */,
 				D826CD701BD3F81400F629EA /* UnReadBubbleView.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8D76C761AB98A24001778F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,23 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8D76C741AB98A24001778F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8D76C7F1AB98A24001778F3 /* BubbleViewDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D8D76C7A1AB98A24001778F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8D76C5E1AB98A24001778F3 /* BubbleViewDemo */;
-			targetProxy = D8D76C791AB98A24001778F3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8D76C6C1AB98A24001778F3 /* Main.storyboard */ = {
@@ -315,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -350,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -361,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YDDJ83LVSQ;
 				INFOPLIST_FILE = BubbleViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -372,44 +308,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YDDJ83LVSQ;
 				INFOPLIST_FILE = BubbleViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D8D76C861AB98A24001778F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BubbleViewDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BubbleViewDemo.app/BubbleViewDemo";
-			};
-			name = Debug;
-		};
-		D8D76C871AB98A24001778F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BubbleViewDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BubbleViewDemo.app/BubbleViewDemo";
 			};
 			name = Release;
 		};
@@ -430,15 +333,6 @@
 			buildConfigurations = (
 				D8D76C831AB98A24001778F3 /* Debug */,
 				D8D76C841AB98A24001778F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8D76C851AB98A24001778F3 /* Build configuration list for PBXNativeTarget "BubbleViewDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8D76C861AB98A24001778F3 /* Debug */,
-				D8D76C871AB98A24001778F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

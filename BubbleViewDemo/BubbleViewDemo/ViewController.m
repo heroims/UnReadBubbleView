@@ -22,6 +22,7 @@
     
     bv=[[UnReadBubbleView alloc] initWithFrame:CGRectMake(60, 60, 25, 25)];
     [self.view addSubview:bv];
+    bv.viscosity=20;
     bv.bubbleLabel.text=@"20";
 
     UIButton *btnAdd=[UIButton buttonWithType:UIButtonTypeRoundedRect];
